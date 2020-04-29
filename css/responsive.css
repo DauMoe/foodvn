@@ -1,0 +1,62 @@
+@media screen and (max-width: 768px) {
+    .wrapper {
+        top: 0;
+        height: 100%;
+    }
+
+    .wrapper>img {
+        height: 275px;
+        top: 0;
+        position: absolute;
+    }
+
+    .slide-img {
+        height: 50%;
+        top: 0;
+    }
+
+    .p-left-30 {
+        top: 26%;
+        height: 50%;
+        padding: 0 30px;
+    }
+
+    .content {
+        height: calc(100% - 300px);
+        position: absolute;
+        bottom: 0;
+    }
+
+    .flex_footer {
+        display: block;
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    .flex_footer>ul {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    /* .navbar-nav:first-child {
+        flex-direction: inherit;
+    } */
+
+    .flex_footer>iframe {
+        width: 300px;
+        height: 250px;
+    }
+
+    .recipes > .card-img-bottom {
+        height: 300px;
+    }
+
+    .footer_copyright {
+        font-size: 12px;
+    }
+    
+    .inline-item {
+        flex-direction: inherit;
+    }
+}

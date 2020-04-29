@@ -3,24 +3,24 @@
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<!-- <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"> -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="./css/animate.css">
 	<link rel="stylesheet" href="./css/custom.css">
+	<link rel="stylesheet" href="./css/responsive.css">
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<title>Demo</title>
 </head>
 <body>
-	<div class="loading">
-		<div class="loading_animation"></div>
-	</div>
-	<header>
-		<div class="banner" id="home">
+	<!-- <div class="loading">
+		<img class="loading_animation center" src="./media/icon/loading.png">
+	</div> -->
+	<header class="h-100vh">
+		<!-- <div class="banner" id="home">
 			<div class="banner_bg"></div>
 			<h1 class="center">FoodVN</h1>
-		</div>
-		<div class="navbar navbar-expand-sm">
-			<ul class="navbar-nav">
+		</div> -->
+		<nav class="navbar navbar-expand-lg" id="collapsibleNavbar">
+			<!-- <ul class="navbar-nav">
 				<li class="nav-item">
 				  <a class="nav-link active" href="#home">home</a>
 				</li>
@@ -42,8 +42,11 @@
 				<li class="nav-item">
 					<a class="nav-link" href="#contact">liên hệ</a>
 				</li>
-			</ul>
-			<ul class="navbar-nav">
+			</ul> -->
+
+
+
+			<!-- <ul class="navbar-nav">
 				<li class="nav-item">
 					<a class="nav-link" href=""><img src="./media/icon/fb.png" alt=""></a>
 				</li>
@@ -56,27 +59,27 @@
 				<li class="nav-item">
 					<a class="nav-link" href=""><img src="./media/icon/tweet.png" alt=""></a>
 				</li>
-			</ul>
-		</div>
+			</ul> -->
+		</nav>
 	</header>
 	
 	<main>
-		<section id="intro" class="h-100vh wow slideInLeft" data-wow-duration="2s">
+		<section id="intro" class="h-100vh">
 			<div class="wrapper row">
-				<div class="content col-5">
+				<img class="col-12 col-md-7 wow slideInLeft" src="./media/intro.jpg" alt="bread">
+				<div class="content col-12 col-md-5 wow slideInRight">
 					<h1>FoodVN</h1>
 					<p>Là một blog review từ ẩm thực đường phố Việt Nam cho tới những nhà hàng cao cấp. Ngoài ra nơi đây còn chia sẻ những công thức, mẹo nhỏ trong nhà bếp giúp cho công việc nội trợ trở nên thú vị hơn và ắt hẳn bạn sẽ không còn cần phải hỏi: "bữa nay ăn gì nhỉ?" vì đã có FoodVN lo!</p><br/>
 					<small>- From DauMoe with love -</small>
-				</div>
-				<img class="col-7" src="./media/intro.jpg" alt="bread">
+				</div>								
 			</div>
 		</section>
 
 		<section class="container-fluid" id="blog">
 			<h1>Blog</h1>
 			<div class="row h-100">
-				<div class="col-3 h-100">
-					<div class="card">
+				<div class="col-md-3 h-100">
+					<div class="card wow rotateInUpLeft">
 						<img class="card-img-top" src="./media/blog1.jpg" alt="pho">
 						<div class="card-body blog">
 							<h6 class="card-title">Tự làm phở tại nhà</h6>
@@ -84,7 +87,7 @@
 						</div>						
 					</div>
 
-					<div class="card">
+					<div class="card wow rotateInUpLeft">
 						<img class="card-img-top" src="./media/blog3.jpg" alt="flower">
 						<div class="card-body blog">
 							<h6 class="card-title">Món ăn từ hoa - bạn đã thử chưa?</h6>
@@ -92,8 +95,8 @@
 						</div>						
 					</div>
 				</div>
-				<div class="col-6 h-100">
-					<div class="card">
+				<div class="col-md-6 h-100">
+					<div class="card wow rotateIn">
 						<img class="card-img-top" src="./media/blog2.jpg" alt="">
 						<div class="card-body blog">
 							<h4 class="card-title">Tạo cảm hứng mới trong nấu ăn</h4>
@@ -101,8 +104,8 @@
 						</div>						
 					</div>
 				</div>
-				<div class="col-3 h-100">
-					<div class="card">
+				<div class="col-md-3 h-100">
+					<div class="card wow rotateInUpRight">
 						<img class="card-img-top" src="./media/blog4.jpg" alt="">
 						<div class="card-body blog">
 							<h6 class="card-title">Cupcake nhân socola</h6>
@@ -110,7 +113,7 @@
 						</div>						
 					</div>
 
-					<div class="card">
+					<div class="card wow rotateInUpRight">
 						<img class="card-img-top" src="./media/blog5.jpg" alt="">
 						<div class="card-body blog">
 							<h6 class="card-title">Setup party ngoài trời</h6>
@@ -124,8 +127,8 @@
 		<section class="container-fluid" id="tip">
 			<h1>Mẹo vặt nhà bếp</h1>
 			<div class="row h-100">
-				<div class="col-6 h-100">
-					<div class="card">
+				<div class="col-sm-12 col-md-6 h-100">
+					<div class="card wow bounceInLeft">
 						<img class="card-img-top" src="./media/tip2.jpg" alt="">
 						<div class="card-body">
 							<h2 class="card-title">Tẩy ố vàng do coffee</h2>
@@ -134,8 +137,8 @@
 					</div>
 				</div>
 
-				<div class="col-3 h-100">
-					<div class="card" style="margin-bottom: 50px">
+				<div class="col-sm-6 col-md-3 h-100">
+					<div class="card wow bounceInDown" style="margin-bottom: 50px">
 						<img class="card-img-top" src="./media/tip1.jpg" alt="">
 						<div class="card-body">
 							<h4 class="card-title f-20">Bảo quản trái cây chín</h4>
@@ -143,7 +146,7 @@
 						</div>
 					</div>
 
-					<div class="card">
+					<div class="card wow bounceInUp">
 						<img class="card-img-top" src="./media/tip4.jpg" alt="">
 						<div class="card-body">
 							<h4 class="card-title f-20">Chữa canh khi bị mặn</h4>
@@ -152,15 +155,15 @@
 					</div>
 				</div>
 
-				<div class="col-3 h-100">
-					<div class="card" style="margin-bottom: 50px">
+				<div class="col-sm-6 col-md-3 h-100">
+					<div class="card wow bounceInDown" style="margin-bottom: 50px">
 						<img class="card-img-top" src="./media/tip3.jpg" alt="">
 						<div class="card-body">
 							<h4 class="card-title f-20">Cách làm bỏng giòn</h4>
 							<p class="card-text tip"></p>
 						</div>					
 					</div>
-					<div class="card">
+					<div class="card wow bounceInUp">
 						<img class="card-img-top" src="./media/tip5.jpg" alt="">
 						<div class="card-body">
 							<h4 class="card-title f-20">Đánh bay vết bẩn cứng đầu trên chảo</h4>
@@ -173,55 +176,55 @@
 
 		<section class="container-fluid h-100vh" id="eating">
 			<h1>Bữa nay ăn gì?</h1>
-			<div id="myCarousel" class="carousel slide border" data-ride="carousel">
+			<div id="myCarousel" class="carousel slide border wow lightSpeedIn" data-ride="carousel">
 				<div class="carousel-inner">
 				   	<div class="carousel-item active">
 						<div class="row h-100 align-center">
-							<div class="col-5 p-left-30">
+							<div class="col-sm-12 col-md-5 p-left-30">
 								<h1 class="slide-header">CupCake chocolate</h1>
 								<p>CupCake này vô cùng đơn giản nên bạn có thể tự làm tại nhà một cách nhanh chóng. Bên trong bánh ẩm mịn không hề khô mà còn mang đậm vị socola thơm ngọt. Bánh ăn không hề bị ngán, một phần là do thành phần sữa chua trong bánh hoà với bột cacao giúp cho bánh có vị ngọt nhẹ một chút chua và đắng đặc trưng tạo cảm giác ăn mãi không ngán</p>
 							</div>
-							<img class="col-7 slide-img" src="./media/eating1.jpg" alt="cupcake">
+							<img class="col-sm-12 col-md-7 slide-img" src="./media/eating1.jpg" alt="cupcake">
 						</div>
 				   	</div>
 
 				   <div class="carousel-item">
 						<div class="row h-100 align-center">
-							<div class="col-5 p-left-30">
+							<div class="col-sm-12 col-md-5 p-left-30">
 								<h1 class="slide-header">Salad rau củ</h1>
 								<p>Nếu như bạn đã chán ngấy với các món ăn nhiều đạm, dầu mỡ và cần sự thanh lọc, “refresh” cho cơ thể thì các món salad thực sự là lựa chọn tuyệt vời. Rất nhiều cách làm salad tùy theo khẩu vị của bạn và người thân. Bạn có thể biến tấu theo nhiều cách khác nhau để cảm nhận sự đa dạng ẩm thực</p>
 							</div>
-							<img class="col-7 slide-img" src="./media/eating2.jpg" alt="salad">
+							<img class="col-sm-12 col-md-7 slide-img" src="./media/eating2.jpg" alt="salad">
 						</div>
 					</div>
 					   
 					<div class="carousel-item">
 						<div class="row h-100 align-center">
-							<div class="col-5 p-left-30">
+							<div class="col-sm-12 col-md-5 p-left-30">
 								<h1 class="slide-header">Pancake cuộn</h1>
 								<p>Một món bánh đường phố của Thái Lan mà bạn không thể nào không thử nếu có dịp đến đây. Bạn cũng có thể làm tại nhà cho gia đình trải nghiệm với hương vị mới lạ và dễ làm, ắt hẳn cả nhà sẽ thích mê!</p>
 							</div>
-							<img class="col-7 slide-img" src="./media/eating3.jpg" alt="pancake">
+							<img class="col-sm-12 col-md-7 slide-img" src="./media/eating3.jpg" alt="pancake">
 						</div>
 					</div>
 
 					<div class="carousel-item">
 						<div class="row h-100 align-center">
-							<div class="col-5 p-left-30">
+							<div class="col-sm-12 col-md-5 p-left-30">
 								<h1 class="slide-header">Sashimi cá hồi</h1>
 								<p>Một trong các bí quyết để có được sức khỏe trường thọ chính là chế độ ẩm thực lành mạnh, đặc biệt là các thực đơn cá được ăn sống. Cá hồi với nguồn dinh dưỡng dồi dào nên không ngạc nhiên khi nó luôn nằm trong danh sách những loại cá được yêu thích nhất</p>
 							</div>
-							<img class="col-7 slide-img" src="./media/eating4.jpg" alt="cool noodle">
+							<img class="col-sm-12 col-md-7 slide-img" src="./media/eating4.jpg" alt="cool noodle">
 						</div>
 					</div>
 
 					<div class="carousel-item">
 						<div class="row h-100 align-center">
-							<div class="col-5 p-left-30">
+							<div class="col-sm-12 col-md-5 p-left-30">
 								<h1 class="slide-header">Xúc xích</h1>
 								<p>Nếu không có thời gian hoặc muốn đổi bữa thì xúc xích hẳn là lựa chọn số một đối với nhiều gia đình vì tính dễ ăn và đa dạng cách chế biến. Từ xúc xích dim nước mắm để ăn với cơm cho tới xúc xích để kẹp bánh mì hoặc ăn kèm trứng ốp quả là một sự lựa chọn tuyệt vời cho một bữa tối nhẹ nhàng</p>
 							</div>
-							<img class="col-7 slide-img" src="./media/eating5.jpg" alt="sausage">
+							<img class="col-sm-12 col-md-7 slide-img" src="./media/eating5.jpg" alt="sausage">
 						</div>
 					</div>
 				</div>
@@ -231,7 +234,7 @@
 		<section class="container-fluid" id="recipes">
 			<h1>Mỗi ngày một công thức</h1>
 			<div class="row">
-				<div class="card col-6 recipes">
+				<div class="card col-sm-12 col-md-6 recipes">
 					<div class="card-body">
 						<h5 class="card-title">Cupcake chocolate</h5>
 						<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, nostrum. Praesentium ex quod excepturi hic quos laboriosam aliquid deleniti expedita molestias quam impedit, tempora sed magni. Nam animi doloremque iusto!</p>
@@ -239,7 +242,7 @@
 					<img class="card-img-bottom" src="./media/eating1.jpg" alt="">
 				</div>
 
-				<div class="card col-6 recipes">
+				<div class="card col-sm-12 col-md-6 recipes">
 					<div class="card-body">
 						<h5 class="card-title">Salad rau củ</h5>
 						<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, nostrum. Praesentium ex quod excepturi hic quos laboriosam aliquid deleniti expedita molestias quam impedit, tempora sed magni. Nam animi doloremque iusto!</p>
@@ -247,7 +250,7 @@
 					<img class="card-img-bottom" src="./media/eating2.jpg" alt="">
 				</div>
 
-				<div class="card col-6 recipes">
+				<div class="card col-sm-12 col-md-6 recipes">
 					<div class="card-body">
 						<h5 class="card-title">Pancake</h5>
 						<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, nostrum. Praesentium ex quod excepturi hic quos laboriosam aliquid deleniti expedita molestias quam impedit, tempora sed magni. Nam animi doloremque iusto!</p>
@@ -255,7 +258,7 @@
 					<img class="card-img-bottom" src="./media/eating3.jpg" alt="">
 				</div>
 
-				<div class="card col-6 recipes">
+				<div class="card col-sm-12 col-md-6 recipes">
 					<div class="card-body">
 						<h5 class="card-title">Sashimi cá hồi</h5>
 						<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, nostrum. Praesentium ex quod excepturi hic quos laboriosam aliquid deleniti expedita molestias quam impedit, tempora sed magni. Nam animi doloremque iusto!</p>
@@ -263,7 +266,7 @@
 					<img class="card-img-bottom" src="./media/eating4.jpg" alt="">
 				</div>
 
-				<div class="card col-6 recipes">
+				<div class="card col-sm-12 col-md-6 recipes">
 					<div class="card-body">
 						<h5 class="card-title">Xúc xích homemade</h5>
 						<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, nostrum. Praesentium ex quod excepturi hic quos laboriosam aliquid deleniti expedita molestias quam impedit, tempora sed magni. Nam animi doloremque iusto!</p>

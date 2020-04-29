@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap');
-
 html{
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    /* overflow: hidden; */
 }
 
 ul, li {
@@ -59,12 +58,12 @@ p {
     background-repeat: no-repeat;
 }
 
-.navbar {
+/* .navbar {
     position: fixed;
     z-index: 10;
     top: 0;
     width: 100%;
-}
+} */
 
 .nav-link {
     text-transform: uppercase;
@@ -79,13 +78,8 @@ p {
     color: #4d4b4b;
 }
 
-.navbar-nav:first-child {
-    width: 80%;
-}
-
-.navbar-nav:nth-child(2) {
-    width: 20%;
-    justify-content: flex-end;
+.navbar-toggler>img {
+    width: 40px;
 }
 
 .nav-link>img {
@@ -96,6 +90,37 @@ p {
     color: #4d4b4b;
     border-bottom: 2px solid #4d4b4b;
 }
+/* ============ Loading ============ */
+.loading {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 11;
+    background-color: white;
+}
+
+.loading_animation {
+    position: absolute;
+    animation: rotate infinite 1s;
+    -webkit-animation: rotate infinite 1s;
+}
+
+@keyframes rotate {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+        -webkit-transform: translate(-50%, -50%) rotate(0deg);
+        -moz-transform: translate(-50%, -50%) rotate(0deg);
+        -ms-transform: translate(-50%, -50%) rotate(0deg);
+        -o-transform: translate(-50%, -50%) rotate(0deg);
+    } to {
+        transform: translate(-50%, -50%) rotate(360deg);
+        -webkit-transform: translate(-50%, -50%) rotate(360deg);
+        -moz-transform: translate(-50%, -50%) rotate(360deg);
+        -ms-transform: translate(-50%, -50%) rotate(360deg);
+        -o-transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
 /* ============ Main ============ */
 main {
     margin: 70px 30px 0;
@@ -119,6 +144,10 @@ section>h1 {
     height: 100vh;
 }
 
+#intro {
+    padding: 0;
+}
+
 .wrapper {
     position: absolute;
     top: 15%;
@@ -127,6 +156,13 @@ section>h1 {
     height: 70%;
     background-color: #edecf4;
     align-items: center;
+}
+
+.wrapper>img {
+    height: 100%;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
 }
 
 .content {
@@ -198,13 +234,6 @@ section>h1 {
     font-weight: bold;
     font-family: banner;
     letter-spacing: 2px;
-}
-
-.wrapper>img {
-    height: 100%;
-    object-fit: cover;
-    padding: 0;
-    margin: 0;
 }
 
 .align-center {
