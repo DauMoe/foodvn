@@ -291,7 +291,7 @@ footer {
 
 .flex_footer>ul>li>img {
     width: 30px;
-    margin-right: 4px;
+    margin: 3px 4px 3px 0;
 }
 
 .form-control {
