@@ -2,7 +2,7 @@ html{
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 ul, li {
@@ -63,6 +63,10 @@ p {
     background-image: url('./../media/banner.jpg');
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.navbar {
+    z-index: 5 !important;
 }
 
 .nav-link {

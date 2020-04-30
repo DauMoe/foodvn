@@ -36,13 +36,13 @@
     .flex_footer>ul {
         padding: 0;
     }
+
+    .inline-item {
+        flex-direction: inherit;
+    }
 }
 
 @media screen and (max-width: 568px) {
-    /* .navbar-nav:first-child {
-        flex-direction: inherit;
-    } */
-
     .flex_footer>iframe {
         width: 300px;
         height: 250px;
@@ -54,9 +54,5 @@
 
     .footer_copyright {
         font-size: 12px;
-    }
-    
-    .inline-item {
-        flex-direction: inherit;
     }
 }
