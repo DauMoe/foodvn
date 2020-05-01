@@ -23,7 +23,7 @@ window.onload = () => {
     
     setInterval(() => {
         loading.style.display = 'none';
-        html.style.overflow = 'auto';
+        html.style.overflowY = 'auto';
     }, 2000);
 }
 navLinkActive = (index)=> {
