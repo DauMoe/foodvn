@@ -49,12 +49,6 @@ $('.carousel').carousel({
 })
 
 window.addEventListener('scroll', () => {
-    if (window.pageYOffset > window.innerHeight*0.8) {
-        navbar.classList.add('bg-light');
-    } else {
-        navbar.classList.remove('bg-light');
-    };
-
     if (home.getBoundingClientRect().y < 1) {
         navLinkActive(4);
     };
@@ -73,7 +67,7 @@ window.addEventListener('scroll', () => {
     if (recipe.getBoundingClientRect().y < 1) {
         navLinkActive(9);
     };
-    if (Math.floor(contact.getBoundingClientRect().bottom) == window.innerHeight) {
+    if (Math.floor(contact.getBoundingClientRect().bottom) == window.innerHeight || contact.getBoundingClientRect().y < 0) {
         navLinkActive(10);
     };
 })
