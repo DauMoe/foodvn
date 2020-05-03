@@ -2,7 +2,6 @@ html{
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    overflow: hidden;
 }
 
 ul, li {
@@ -421,6 +420,48 @@ form>.btn {
 @font-face {
     src: url('./../font/Cabin-Italic.ttf');
     font-family: blog-poster;
+}
+/* ======= Menu ======== */
+.blog_menu {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    background-color: white;
+    padding: 90px 0px 10px 10px;
+    margin: 0 !important;
+}
+
+.showBlogMenu {
+    animation: showBlog .4s;
+    -webkit-animation: showBlog .4s;
+    top: 0;
+}
+
+@keyframes showBlog {
+    from {
+        top: -100%;
+    } to {
+        top: 0;
+    }
+}
+
+.blog_menu>div>a>p {
+    color: black;
+    margin: 20px;
+    font-family: futura-medium;
+}
+
+.blog_menu>div>a:hover {
+    text-decoration: underline;
+}
+
+.blog_menu>.col-md-8 {
+    background-image: url('./../media/banner.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* ====== Navbar ====== */
