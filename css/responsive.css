@@ -48,9 +48,33 @@
     .inline-item {
         flex-direction: inherit;
     }
+
+    .blog_title {
+        padding: 0;
+    }
+
+    .blog_title>h1 {
+        font-size: 100px;
+    }
 }
 
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 568px){
+    .navbar > a > h1 {
+        font-size: 40px;
+    }
+    
+    .blogNavbar_social>a:first-child {
+        display: block;
+    }
+
+    .blogNavbar_social>a:nth-child(2), .blogNavbar_social>a:nth-child(3), .blogNavbar_social>a:nth-child(4) {
+        display: none;
+    }
+
+    .blogNavbar_menu > p{
+        display: none;
+    }
+
     .banner_content>div>p {
         display: none;
     }
@@ -71,5 +95,25 @@
 
     .footer_copyright {
         font-size: 12px;
+    }
+
+    .blog_title>h1 {
+        font-size: 55px;
+    }
+
+    .blog_content {
+        margin: 0;
+    }
+
+    .blog_content > div > p{
+        margin: 30px 0;
+        font-size: 16px;
+    }
+
+    .blog_recipes {
+        margin: 0;
+    }
+    .blog_recipes > ul{
+        padding-left: 20px;
     }
 }

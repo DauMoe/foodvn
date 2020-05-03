@@ -2,7 +2,7 @@ html{
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 ul, li {
@@ -11,6 +11,10 @@ ul, li {
 
 a {
     color: white;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 p {
@@ -51,6 +55,7 @@ p {
 
 .bg-light {
     top: 0px;
+    background-color: white !important;
 }
 
 /* ============= Banner ============== */
@@ -268,6 +273,10 @@ section>h1 {
     border: none;
 }
 
+.carousel-item.active:hover {
+    color: gray;
+}
+
 .p-left-30 {
     padding-left: 30px;
 }
@@ -391,4 +400,163 @@ form>.btn {
 
 .footer_copyright>small {
     font-style: italic;
+}
+/* 
+==========================================
+|                                        |
+|                   BLOG                 |
+|                                        |
+========================================== 
+*/
+@font-face {
+    src: url('./../font/FuturaPTMedium.otf');
+    font-family: futura-medium;
+}
+
+@font-face {
+    src: url('./../font/FuturaPTExtraBold.otf');
+    font-family: blog-title;
+}
+
+@font-face {
+    src: url('./../font/Cabin-Italic.ttf');
+    font-family: blog-poster;
+}
+
+/* ====== Navbar ====== */
+.navbar>a>h1 {
+    font-family: banner;
+    font-size: 50px;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: black;
+}
+
+.navbar>a>h1:hover {
+    border-bottom: 2px solid black;
+}
+
+.blogNavbar_menu {
+    display: flex;
+    align-items: center;
+}
+
+.blogNavbar_menu:hover div>.blogNavbar_line{
+    margin: 10px 0;
+}
+
+.blogNavbar_menu>p {
+    text-transform: uppercase;
+    margin-left: 10px;
+    font-family: futura-medium;
+}
+
+.blogNavbar_menu>p:hover {
+    cursor: pointer;
+}
+
+.blogNavbar_line {
+    width: 20px;
+    height: 2px;
+    background-color: gray;
+    margin: 2px 0;
+    transition: margin .3s;
+    -webkit-transition: margin .3s;
+    -moz-transition: margin .3s;
+    -ms-transition: margin .3s;
+    -o-transition: margin .3s;
+}
+
+.blogNavbar_social>a>img {
+    width: 22px;
+    margin: 5px;
+}
+
+/* ========== Blog Content =========== */
+.blog_wrapper {
+    position: relative;
+}
+
+.blog_title {    
+    text-align: center;
+    margin-top: 150px;
+    padding: 30px 80px;
+}
+
+.blog_title>h1 {
+    font-family: blog-title;
+    font-size: 125px;
+}
+
+.blog_title>h3 {
+    font-family: blog-poster;
+    margin: 30px 0;
+}
+
+.blog_title>p {
+    margin-bottom: 30px;
+}
+
+.blog_banner {
+    width: 100%;
+}
+
+.blog_content {
+    margin: 40px 50px;
+}
+
+.blog_content>div>p {
+    font-size: 20px;
+    margin: 40px;
+}
+
+.blog_recipes {
+    background-color: rgba(207, 219, 231, 0.37);
+    padding: 20px 10px;
+    max-width: 800px;
+    margin: 0 0 0 8%;
+}
+
+.blog_recipes>ul {
+    padding-left: 90px;
+}
+
+.blog_recipes>ul>li {
+    list-style-type: disc;
+    margin: 10px 0;
+}
+
+.intro_recipes {
+    text-align: center;
+}
+
+.intro_recipes>img {
+    width: 200px;
+    height: 200px;
+    margin: 10px 0 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.intro_recipes>h3 {
+    font-weight: bold;
+}
+
+.intro_recipes>p {
+    margin: 20px;
+}
+
+.more_recipes>.card>img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.more_recipes>.card>.card-body>a>.card-title {
+    font-size: 14px;
+    text-align: center;
+    color: black;
 }
