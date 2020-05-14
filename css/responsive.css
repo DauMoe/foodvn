@@ -1,10 +1,10 @@
 @media screen and (max-width: 768px) {
-    .banner_wrapper {
-        width: 200%;
+    .banner_background {
+        background-image: url('./../media/mobile-bg.png');
     }
 
     .banner_content {
-        width: 50%;
+        width: 70%;
     }
 
     .wrapper {
