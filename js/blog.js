@@ -12,6 +12,7 @@ blogmenu.addEventListener('click', () => {
 })
 
 homepage[0].href = baseURL;
+homepage[5].href = baseURL;
 homepage[1].href = baseURL + '#blog';
 homepage[2].href = baseURL + '#tip';
 homepage[3].href = baseURL + '#eating';
