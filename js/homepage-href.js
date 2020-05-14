@@ -1,4 +1,6 @@
 const baseURL = window.location.protocol + '//' + window.location.host;
-let cupcake_blog = document.querySelector('#cupcake_blog');
+let eating_href = document.querySelectorAll('.slide-header');
 
-cupcake_blog.href = baseURL + '/blog.html';
+eating_href.forEach(item => {
+    item.href = baseURL + '/blog.html';
+})    

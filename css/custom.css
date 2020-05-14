@@ -296,6 +296,7 @@ section>h1 {
 .slide-header {
     font-size: 30px;
     font-weight: bold;
+    color: rgb(95, 84, 84);
 }
 
 .content>h1 {
@@ -308,9 +309,19 @@ section>h1 {
     align-items: center;
 }
 
+.tip {
+    color: black;
+    font-size: 18px;
+}
+
 .recipes {
     padding-bottom: 20px;
     border-bottom: 2px dashed gray;
+}
+
+.recipe {
+    color: black;
+    font-size: 25px;
 }
 
 .recipes>.card-img-bottom {
@@ -597,7 +608,7 @@ form>.btn {
 }
 
 .more_recipes>.card>.card-body>a>.card-title {
-    font-size: 14px;
+    font-size: 18px;
     text-align: center;
     color: black;
 }
